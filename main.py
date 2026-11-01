@@ -110,7 +110,7 @@ authors_data = [    ("Фрэнк Герберт", "США", 1920),
     ("Джон Стейнбек", "США", 1902),
     ("Франц Кафка", "Австро-Венгрия", 1883),]
 assert len(books_data) == 100, (    f"Ожидалось 100 книг, получено {len(books_data)}")
-connection = sqlite3.connect("bookstore.db")
+connection = sqlite3.connect("bookstore_oop.db")
 try:
     cursor = connection.cursor()
     cursor.execute("DROP TABLE IF EXISTS author_info")

@@ -1,5 +1,5 @@
 import sqlite3
-connection = sqlite3.connect("bookstore.db")
+connection = sqlite3.connect("bookstore_oop.db")
 connection.row_factory = sqlite3.Row
 
 def main():
